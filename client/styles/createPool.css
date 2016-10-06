@@ -1,0 +1,110 @@
+.studentParent{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  border-style: solid;
+  border-width:  2px;
+  border-color:  #b4b7c0;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.stuImg{
+  margin-right: 1em;
+  max-height: 96%;
+}
+
+.stuProfile{
+  flex: 2;
+  display: flex;
+}
+.stuName{
+  flex:2;
+}
+
+.roleBtns{
+  display: flex;
+  flex: 1;
+}
+
+.deleteStu{
+/*  flex: 1;*/
+}
+
+.toggleRole{
+  margin-right: 1%;
+}
+
+.offBtn{
+  background-color: rgba(0,0,0,0.12) !important;
+  color: rgba(0,0,0,0.38) !important;
+}
+
+.adminBtn{
+  background-color: rgba(220, 44, 05, .8);
+  flex: 1;
+}
+
+.adminBtn:hover{
+  background-color: rgba(220, 44, 05, 1);
+}
+
+.adminBtn:active{
+  background-color: rgba(220, 44, 05, 1);
+}
+
+.stuBtn{
+  background-color: rgba(86, 31, 41, .8);
+}
+
+.stuBtn:hover{
+  background-color: rgba(86, 31, 41, 1);
+}
+
+.studentBtn{
+  flex: 1;
+}
+
+.createListTitle{
+  text-align: center;
+}
+
+.createControls{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createCtrl{
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+
+input.createCtrl{
+  font-size: 2em;
+  width: 300px;
+  height: 30px;
+}
+
+.removed{
+  color: #AAA;
+  opacity: 0.7;
+}
+
+.removed>.stuName{
+  text-decoration: line-through;
+}
+
+.creatingUserList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-bottom: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid #0298F5;
+  background-color: rgba(2, 152, 245, 0.1);
+  border-radius: 10px;
+  width: 70%;
+}

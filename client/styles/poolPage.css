@@ -1,0 +1,127 @@
+.poolPageBody{
+  text-align: center;
+}
+
+.poolTitle{
+  border: none !important;
+}
+
+.newGrouping{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.groupingTitle{
+  /*text-decoration-color: #CCC;
+  text-decoration: underline;*/
+  /*border-bottom: 1px solid #CCC;*/
+}
+.partnerUpBtn{
+  margin-bottom: 2rem;
+}
+
+.pastGrouping{
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.groupingName{
+  margin-bottom: 2rem;
+}
+.trashButton{
+  height:43px;
+  width:45px;
+  padding: 0px !important;
+}
+.trash{
+  /*background-image: url('assets/trash-can.png');*/
+  height: 20px;
+  width:20px;
+}
+
+#partners{
+  margin-bottom: 2rem;
+}
+
+.history{
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.groupingUsers{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border: 1px solid #CCC;
+  margin-bottom: 1%;
+}
+
+.clickable{
+  cursor: pointer;
+}
+
+
+.grp{
+  display: flex;
+  border: 1px solid #CCC;
+}
+
+.partner{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.portrait{
+  flex: 1;
+  max-height: 50px;
+  /*margin-left: 33%;*/
+  /*margin-right: 2%;*/
+  /*border-left: 1px solid #CCC;*/
+}
+
+.tooltip{
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(2, 152, 245, 0.6);
+  color: white;
+  text-shadow: 1px 1px #000;
+  border: 1px solid black;
+  height: 100%;
+  /*text-align: center;*/
+  /*margin: 0px;*/
+  width:100%;
+  line-height: 1.5 !important;
+  /*padding: 0px;*/
+  align-items: center;
+}
+
+.partnerName{
+  flex: 10;
+}
+.lockBtn{
+  /*flex: none !important;*/
+  /*display: block !important;*/
+  margin-right: 5%;
+  float: right;
+  max-height: 15px;
+  cursor: pointer;
+  max-width: 15px;
+  margin-left: 10%;
+}
+
+.selectedStu{
+  color: #999;
+}
+
+.clash{
+  color: red;
+}
+
+.locked{
+  background-color: #CCC;
+}

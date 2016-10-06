@@ -1,0 +1,96 @@
+.home{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.homeTitle{
+  text-align: center;
+}
+/*.allHeight{
+  height: 100vh;
+  width:100vw;
+}*/
+
+.homePool{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  /*align-items: center;*/
+  border: 2px solid #888;
+  margin-bottom: 5%;
+  cursor: pointer;
+  height: 75px;
+  border-radius: 10px;
+}
+
+.homePool:hover{
+  box-shadow: 2px 2px #888;
+  transition-duration: 0.35s;
+  /*color: #0298F5;*/
+  color: #DE7C00;
+}
+
+.homePoolNameSection{
+  display: flex;
+  flex: 3;
+  align-items: center;
+  justify-content: left;
+  border-radius: 10px;
+}
+
+.homePoolName{
+  flex: 19;
+  margin-left: 2%;
+}
+
+.homePoolRemoveBtn{
+  height: 100%;
+  overflow-x: hidden;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  flex: 1;
+  align-self: center;
+}
+
+.homePoolRemoveBtn:hover{
+  background-color: #DC4405;
+}
+
+.homeRoles{
+  display: flex;
+ /* flex-direction: column;*/
+  flex: 1;
+}
+
+.homeRole{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid #888;
+  padding-left: 3px;
+  color: white;
+  text-align: center;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;*/
+}
+
+.homeRole>div{
+
+}
+
+.admin{
+  background-color: rgba(220, 44, 05, .8) !important;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.member{
+  background-color: rgba(86, 31, 41, .8) !important;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  /*color: rgba(0,0,0,0.38) !important;*/
+}
+.noPools{
+  text-align: center;
+}

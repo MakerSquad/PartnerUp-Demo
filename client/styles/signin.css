@@ -1,0 +1,68 @@
+.bodyclass{
+/*  background-image: url('../assets/giphy.gif') !important;
+  background-size: 23%;
+  height: 100vh;*/
+}
+
+.robots{
+  height:50vh;
+  width:100vw;
+   background-repeat: repeat-y;
+}
+
+.demoBtn{
+  float: right;
+  margin-right: 2%;
+}
+
+.partnerUpWelcome{
+/*  writing-mode: tb-rl;*/
+  text-align: center !important;
+  color: #861F41 !important;
+  text-shadow: 2px 2px black;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;*/
+   max-width: 50%;
+
+
+}
+
+.login{
+   font-family: 'Merriweather', Georgia, Times, 'Times New Roman', serif;
+   font-size: 100px !important;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+   /*background-image: url('../assets/giphy.gif') !important;*/
+  /*background-image: url("http://www.marketingtango.com/wp-content/uploads/2014/01/partnerships-matter.jpg");*/
+}
+.loginBtn{
+  /*background-color: cornflowerblue;*/
+  /*color:white;*/
+  /*border-radius: 5px;*/
+  /*height:35px;*/
+  width: 150px;
+  /*font-size:13px;*/
+   margin: auto;
+  display: block ;
+  /*max-height: 10%;*/
+  margin-top: 55px;
+  /*margin-bottom: 150px;*/
+  /*position: relative;
+   /*box-shadow:none;*/
+   /*border: none;*/
+
+}
+.info{
+  padding:30px;
+  background-color: #ebebeb;
+  border: solid;
+  border-color: #dbdbdb;
+}
+.black{
+  background-color: black !important;
+   position:absolute !important;
+   bottom:0px !important ;
+   width:100% !important;
+
+   height:150px !important;
+}

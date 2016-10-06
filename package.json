@@ -1,0 +1,36 @@
+{
+  "name": "PU",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "./node_modules/.bin/nodemon --ignore node_modules server/Server.js",
+    "migrate": "./node_modules/.bin/knex migrate:latest"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.6",
+    "browser-sync": "^1.5.7",
+    "chai": "^3.5.0",
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-config-google": "^0.6.0",
+    "eslint-plugin-import": "^2.0.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
+  },
+  "dependencies": {
+    "bower": "^1.7.9",
+    "express": "^4.4.5",
+    "jwt-simple": "^0.2.0",
+    "node-less-endpoint": "^0.2.0",
+    "nodemon": "^1.10.2",
+    "path": "^0.12.7",
+    "request": "^2.36.0"
+  },
+  "engines": {
+    "node": "6.6.0"
+  }
+}

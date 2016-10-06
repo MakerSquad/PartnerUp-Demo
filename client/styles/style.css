@@ -1,0 +1,65 @@
+.bodyclass{
+  background-image: url('../assets/giphy.gif');
+  background-size: 23% 
+
+}
+body {
+/*  margin: 0;
+  margin-top: 10px;
+  
+  font-family: 'Josefin Sans', sans-serif;*/
+ background-image: url('../assets/pw_maze_white.png');
+/* background-size: 25%*/
+ width: 100%;
+ margin-left:0px;
+ margin-right:0px;
+
+}
+
+th{
+  padding-right: 30px;
+}
+
+td{
+  padding-right: 30px;
+}
+
+.fade {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+.fade.ng-hide {
+  opacity:0;
+}
+
+.slide{
+  transition:top linear 0.5s;
+  transition:opacity linear 0.2s;
+  -webkit-transition:all linear 0.5s;
+}
+.slide.ng-hide{
+  top: 150px;
+  height:0;
+  opacity:0;
+  /*padding:0 10px;*/
+}
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.Grid{
+  display: flex;
+}
+
+.Grid--cell{
+  flex: 1;
+}

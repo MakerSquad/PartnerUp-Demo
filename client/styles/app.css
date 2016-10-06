@@ -1,0 +1,86 @@
+body{
+  min-height: 100vh;
+  
+}
+html{
+  background-color: #F0F4F5;
+}
+.ng-scope{
+  background-color: #F0F4F5;
+}
+
+.demoSideBar{
+  position: absolute;
+  top:10%;
+  right:0px;
+  width: 13%;
+  height: 100%;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding-left: 1%;
+  line-height: 1.75;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.fade {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+.fade.ng-hide {
+  opacity:0;
+}
+.ng-scope{
+  /*background-color: #F0F4F5;*/
+/*background-color: #F0F4F5;*/
+}
+
+.extraBtn{
+  text-align: center;
+}
+
+.error{
+  color: red;
+  border: 2px solid red;
+  background-color: #ffe6e6;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Grid--cell{
+  flex: 1;
+}
+
+
+.welcome{
+  display: flex;
+  flex: 1;
+  /*width: 33% !important;
+  flex: none !important;*/
+  padding-right: 1%;
+  align-self: center;
+  margin-left: 2%;
+  /*border-bottom: 1px solid #DDD;*/
+}
+
+.headerBtns{
+  display: flex;
+  flex: 1;
+}
+
+.signout{
+ text-align: center;
+}
+
+.navBtn{
+  flex: 1;
+  margin-left: 1%;
+}
+
+.headerBar{
+  display: flex;
+  border-bottom: 1px solid #00B398;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  align-items: center;
+  /*padding-bottom: 10px;*/
+}
