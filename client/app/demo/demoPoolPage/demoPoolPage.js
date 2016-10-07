@@ -1,6 +1,6 @@
-angular.module('PU.demoPoolPage', ['PU.factories'])
+angular.module('PU.demoPoolPage', [])
 
-.controller('DemoPoolPageController', function ($scope, $routeParams, $location, $route, $http){
+.controller('DemoPoolPageController', function ($scope, $routeParams, $location, $route){
   document.getElementById("bodyclass").className = "";
   $scope.pastGroupings = [];
   $scope.currPool;
@@ -465,14 +465,14 @@ angular.module('PU.demoPoolPage', ['PU.factories'])
         alert(`Quack.\n   __\n<(o )___\n ( ._>  /\n  '---'`);
         return;
       }
-      $location.path(`/demo/users/${user.user.uid}`);
+      $location.path(`/users/${user.user.uid}`);
     }
   }
 
   var init = (function(){ //function that runs on load; it'll call all the fns to set up the page
     new Clipboard('.clipyclip');
     if(!window.currentUser){
-      $location.path('/demo');
+      $location.path('/');
       return;      
     }
     $scope.loading = true;

@@ -1,6 +1,6 @@
-angular.module('PU.demoCreatePool', ['PU.factories'])
+angular.module('PU.demoCreatePool', [])
 
-.controller('DemoCreatePoolController', function ($scope, MakerPass, $location, $route, $http, $window, $anchorScroll, DB, CurrentUser) {
+.controller('DemoCreatePoolController', function ($scope, $location, $route, $window, $anchorScroll) {
   $scope.allCohorts = [];
   $scope.isStudent = {};
   $scope.users = [];
@@ -124,7 +124,7 @@ angular.module('PU.demoCreatePool', ['PU.factories'])
     window.pools.push(groupData);
     window.poolMemberships.push(members.map((m) => Object.assign(window.demoUsersById[m.user_uid], {role: m.role})));
     window.pastGroupings.push([]);
-    $location.path('/demo/pools/' + window.pools.length);
+    $location.path('/pools/' + window.pools.length);
   }
 
 //******************************************************************************
@@ -170,7 +170,7 @@ angular.module('PU.demoCreatePool', ['PU.factories'])
       // $scope.loading = true;
       new Clipboard('.clipyclip');
       if(!window.currentUser){
-        $location.path('/demo');
+        $location.path('/');
         return;      
       }
       $scope.currentUser = window.currentUser;

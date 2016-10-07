@@ -1,13 +1,13 @@
-angular.module('PU.demoHome', ['PU.factories'])
+angular.module('PU.demoHome', [])
 
-.controller('DemoHomeController', function ($scope, MakerPass, $location, $route, $http, StateSaver, DB, CurrentUser) {
+.controller('DemoHomeController', function ($scope, $location, $route) {
 
 $scope.goToCreatePool = function(){
-  $location.path('/demo/createPool')
+  $location.path('/createPool')
 }
 
 $scope.goToPool = function(pool){
-  $location.path(`/demo/pools/${pool.id}`);
+  $location.path(`/pools/${pool.id}`);
 }
 
 $scope.deletePool = function(pool){
@@ -26,7 +26,7 @@ $scope.deletePool = function(pool){
     $scope.loading = true;
     new Clipboard('.clipyclip');
     if(!window.currentUser){
-      $location.path('/demo');
+      $location.path('/');
       return;      
     }
 

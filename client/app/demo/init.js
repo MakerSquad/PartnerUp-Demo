@@ -1,10 +1,4 @@
-angular.module('PU.demoStart', [])
-.controller('DemoStartController', function($scope, $location){
-
-  $scope.goToHome = function(){
-    $location.path('/home');
-  }
-
+console.log("Initializing data");
 var pics = '../../../assets';
 window.currentUser = {name: "Joe Demo", uid: "demoId", avatar_url: `${pics}/joedemo.jpg`};
 window.pools = [
@@ -117,4 +111,3 @@ window.cohortMemberships = [
     }}
   ]
 ]
-})

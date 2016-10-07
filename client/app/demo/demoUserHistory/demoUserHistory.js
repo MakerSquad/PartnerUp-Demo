@@ -1,6 +1,6 @@
 angular.module('PU.demoUserHistory', [])
 
-.controller("DemoUserHistoryController", function($scope, CurrentUser, $location, DB, $routeParams){
+.controller("DemoUserHistoryController", function($scope, $location, $routeParams){
   $scope.currentUser = {};
   var allHistory = [];
   $scope.error = "";
@@ -102,7 +102,7 @@ angular.module('PU.demoUserHistory', [])
   var init = (function(){
     new Clipboard('.clipyclip');
     if(!window.currentUser){
-      $location.path('/demo');
+      $location.path('/');
       return;      
     }
     $scope.loading = true;
