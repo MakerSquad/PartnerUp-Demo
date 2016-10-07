@@ -75,6 +75,9 @@ window.demoUsersById = {
     }},
   '-0': {role: 'student', user_uid: '-0', user:{
       name: 'Rubber Duck Debugger', uid: '-0', avatar_url: `${pics}/rubberducky.png`
+    }},
+  '-1': {role: 'student', user_uid: '-1', user:{
+      name: 'Rubber Duck Debugger', uid: '-1', avatar_url: `${pics}/rubberducky.png`
     }}
 }
 

@@ -8,6 +8,7 @@ angular.module('PU.demoUserHistory', [])
   $scope.user;
 
   var demoGetUserHistory = function(userUid){
+    console.log("Window.pastGroupings: ", window.pastGroupings);
     var pairingData = window.pastGroupings.map(function(pool){
       return pool.map(function(generation){        
         return {
@@ -18,11 +19,21 @@ angular.module('PU.demoUserHistory', [])
         }
       })
     });
+    console.log("Pairing data: ", pairingData);
 
     var userHist = [];
     pairingData.forEach(function(pool){
       return pool.map(function(generation){
         userHist = userHist.concat(generation.pairs.map(function(pair){
+          console.log("Pair: ", pair);
+          if(/-\d+/.test(pair.user1_uid)){
+            window.demoUsersById[pair.user1_uid] = 
+            {role: 'student', user_uid: pair.user1_uid, user:{name: 'Rubber Duck Debugger', uid: pair.user1_uid, avatar_url: `${pics}/rubberducky.png`}}
+          }
+          if(/-\d+/.test(pair.user2_uid)){
+            window.demoUsersById[pair.user2_uid] = 
+            {role: 'student', user_uid: pair.user2_uid, user:{name: 'Rubber Duck Debugger', uid: pair.user2_uid, avatar_url: `${pics}/rubberducky.png`}}
+          }
           return {
           generations: generation.generationData,
           group: window.pools[generation.generationData.group_id -1],
