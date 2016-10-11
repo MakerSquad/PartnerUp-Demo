@@ -3,7 +3,15 @@ body{
   
 }
 html{
+  min-height: 100vh;
   background-color: #F0F4F5;
+}
+
+.demoStartBody{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  line-height:  1.5;
 }
 .ng-scope{
   background-color: #F0F4F5;
@@ -77,6 +85,7 @@ html{
 }
 
 .headerBar{
+  height: 10%;
   display: flex;
   border-bottom: 1px solid #00B398;
   margin-bottom: 20px;
